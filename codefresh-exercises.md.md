@@ -35,3 +35,16 @@ here are my codfresh exercise notes
    --dest-namespace default \
    --dest-server https://kubernetes.default.svc
 ```
+
+## ApplcationSets
+
+
+```
+ argocd app create my-application-sets \
+   --project default \
+   --sync-policy auto \
+   --repo https://github.com/lalyos/gitops-cert-level-2-examples.git \
+   --path ./application-sets/my-application-sets \
+   --dest-namespace default \
+   --dest-server https://kubernetes.default.svc
+```
