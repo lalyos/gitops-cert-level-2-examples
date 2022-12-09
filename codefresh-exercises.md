@@ -40,6 +40,10 @@ here are my codfresh exercise notes
 
 
 ```
+ ## if want to recreate:
+ argocd app delete my-application-sets -y
+
+
  argocd app create my-application-sets \
    --project default \
    --sync-policy auto \
