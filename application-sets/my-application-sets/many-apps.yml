@@ -15,7 +15,7 @@ spec:
             - path: application-sets/example-apps/*
   template:      
     metadata:
-      name: '{{path.basename}}'
+      name: '{{path.basename}}-{{name}}'
     spec:
       # The project the application belongs to.
       project: default
