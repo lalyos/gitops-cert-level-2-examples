@@ -1,2 +1,2 @@
 kustomize:
-  dir: ./qa
+  dir: .envs/qa
