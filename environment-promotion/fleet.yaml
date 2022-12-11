@@ -1,2 +1,17 @@
-kustomize:
-  dir: ./envs/qa
+
+
+targetCustomizations:
+- name: qa
+  kustomize:
+    dir: ./envs/qa
+  clusterSelector:
+    matchLabels:
+      env: dev
+
+- name: staging
+  kustomize:
+    dir: ./envs/staging
+  clusterSelector:
+    matchLabels:
+      env: dev
+  # clusterName: dev-cluster
